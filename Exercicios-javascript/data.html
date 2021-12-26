@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserir dados</title>
+    <style>
+        body { font: 20pt Arial; }
+        button { font-size: 15pt; padding: 50px; }
+    </style>
+</head>
+<body>
+    <h1>responda as perguntas</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <script>
+        function inicio() {
+            let nome = prompt('Qual é o seu nome? ')
+            let idade = parseInt(prompt ('Qual sua idade?'))
+            let idadeNova = idade + 1
+            let anoNascimento = 2021 - idade
+            window.alert(`Olá, ${nome}! você tem ${idade} anos, ano que vem você faz ${idadeNova} e você nasceu em ${anoNascimento} !`)
+        }
+    </script>
+</body>
+</html>
